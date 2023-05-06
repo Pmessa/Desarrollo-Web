@@ -1,5 +1,4 @@
-
-body{
+.body-index{
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -9,4 +8,7 @@ body{
     background-attachment: fixed;
     background-position:center;
 
+}
+.body-galeria{
+    background-color:rgb(255, 252, 228);
 }

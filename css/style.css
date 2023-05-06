@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-body {
+.body-index {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -14,6 +14,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+}
+
+.body-galeria {
+  background-color: rgb(255, 252, 228);
 }
 
 Header {
@@ -166,7 +170,8 @@ footer .slogan {
 .h1__container {
   display: flex;
   position: relative;
-  top: 100px;
+  top: 110px;
+  color: #67726c;
   align-content: center;
   justify-content: center;
   text-align: center;
@@ -174,8 +179,8 @@ footer .slogan {
   height: 70px;
 }
 .h1__container .h1__galeria {
-  font-family: "Great Vibes", cursive;
-  font-size: 2.7rem;
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 1.5rem;
   margin: 0;
   padding: 0;
 }
@@ -190,7 +195,7 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   padding-bottom: 60px;
   padding: 15px;
-  gap: 20px;
+  gap: 10px;
   grid-auto-rows: minmax(250px, auto);
   grid-auto-flow: dense;
 }
