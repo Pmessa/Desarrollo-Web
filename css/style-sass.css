@@ -1,0 +1,466 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Great+Vibes&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+    }
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: rgb(214, 214, 175);
+    }
+
+Header{
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+    justify-content: space-between;
+    z-index: 10;
+    position:fixed;
+    width: 100%;
+    flex-direction: column;
+    background: linear-gradient(
+        rgb(214, 214, 175),
+        rgb(202, 164, 93),
+        rgb(202, 164, 93),
+        rgb(202, 164, 93),
+        rgb(202, 164, 93),
+        rgb(214, 214, 175)
+        );
+    }
+
+.logo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 64px;
+    width: 100%;
+    grid-column: 1 / 3;
+    }
+
+.logo img{
+    height: 64px;
+    margin: 15px;
+    }
+#navbarSupportedContent{
+    margin-top: 10px;
+    }
+.navbar-brand img{
+    height: 10 0px;
+    }
+
+.navbar{
+    grid-column: 3 / 20; 
+    justify-self: end;
+    }
+
+.navbar .container-fluid{
+    flex-direction: column;
+    }
+
+.navbar-nav a{
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    font-size: 1.2rem; 
+    }
+
+.navbar-nav a:hover{
+        color: rgb(253, 255, 209);
+        text-shadow: 1px 6px 6px rgb(0, 0, 0);
+    }
+
+@media screen and (max-width: 991px) {
+        .container-fluid{
+            flex-direction: row;
+            grid-column: 3 / 20;
+            
+        }
+        .navbar-collapse{
+            border-radius: 10px;
+            width: 100vw;
+            background: linear-gradient(
+                rgb(214, 214, 175),
+                rgb(202, 164, 93),
+                rgb(202, 164, 93),
+                rgb(202, 164, 93),
+                rgb(202, 164, 93),
+                rgb(214, 214, 175)
+                );
+        }
+
+    }
+    
+    /* aquí termina el Header */
+
+/* -------------------------------------------------------------------------------------------- */
+/* aquí comienza el section de la página de inicio*/
+
+
+.h1__container .h1__index{
+    display: flex;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    height: 70px;
+    }
+
+.h1__index{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 10px;
+    }
+
+.index__section__container{
+    display: grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows:repeat(6, 1fr);
+    align-content: center;
+    justify-content: center; 
+    }
+
+.index__container{
+    margin: 0 auto;
+    grid-column:1 / 8;
+    grid-row: 2 / 5;
+    width: 80%;
+    display: flex;
+    align-content: center;
+    justify-content: center ;
+    flex-direction: column;
+   
+
+    
+    }
+
+.slogan{
+    display:flex;
+    justify-content: center; 
+    font-size:1.5rem;
+    }
+.slogan p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    color:#000000;
+    
+    }
+.index__section__img{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+
+    }
+.index__section__img img{
+
+        justify-content: center;
+        background-color:rgba(85, 15, 15, 0.192);
+        border:solid rgba(128, 128, 128) 2px;
+        border-radius:8px;
+        height: 200px;
+        margin: 20px;
+    
+    }
+/* Aquí temnina el secrión del index */
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    /* section de Galería */
+
+  
+.h1__container{
+    display: flex;
+    position: relative;
+    top: 100px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 70px;
+     
+     
+    }
+.h1__galeria{
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.7rem;
+    margin: 0;
+    padding: 0;
+    }
+
+section{
+    position: relative;
+    top: 100px;
+    }
+.section__container{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding-bottom: 60px;
+    padding: 15px;
+    gap: 20px;
+    grid-auto-rows:minmax(250px, auto);
+    grid-auto-flow: dense;
+    
+    }
+
+.imagen-galeria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid brown;
+    transition: transform 03ms ease-in-out;
+    background-color: rgb(118, 114, 114);
+    }
+
+.imagen-galeria:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+    }
+
+.imagen-galeria img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    }
+
+@media (min-width: 600px){
+    
+    .wide{
+        grid-column: span 2;
+    }
+    .tall{
+        grid-row: span 2;
+    }
+
+    }
+/* aquí termina el section de la galería */
+/* -------------------------------------------------------------------------------------------- */
+/* Aquí comienza la sección de asesorías */
+.titulo{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+div .card{
+    margin: 10px;
+    background: linear-gradient(   rgb(118, 114, 114),
+    rgb(202, 164, 93));
+    }
+
+.h1__asesorias{
+        font-family: 'Great Vibes', cursive;
+        font-size: 3.5rem;
+        margin: 0 auto;
+        padding: 10px;
+        }
+
+h2, p{
+    font-weight: normal;
+    }
+
+h2, p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    }
+
+.card__container{
+    display: flex;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    }
+
+.card-title{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    }
+.btn {
+    color: white;
+    background: rgb(11 74 45);
+    }
+
+
+/* Aquí termina la sección de asesorías */
+/* -------------------------------------------------------------------------------------------- */
+
+
+/* Aquí comienza Capacitaciones */
+.h1__capacitaciones{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    margin: 0 auto;
+    padding: 10px;
+    }
+
+
+/* Aquí termina Capacitaciones ---------------------------------------------------------------------------------------------------*/
+
+/* Aquí comienza eBooks */
+.h1__ebooks{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    margin: 0 auto;
+    padding: 10px;
+    }
+/* Aquí termina eBooks------------------------------------------------------------------------------------------- */
+
+/* Aquí comienza Contactos */
+.h1__contacto{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    margin: 0 auto;
+    padding: 10px;
+    }
+h3{
+    font-family: 'Roboto', sans-serif;
+
+    }
+.contacto__section__container{
+    text-align:center;
+
+    }
+form {
+   
+    margin: 50px auto;
+    width: 400px;
+    padding:20px;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(
+        rgb(202, 164, 93),
+        rgb(202, 164, 93),
+        rgb(202, 164, 93),
+        rgb(202, 164, 93),
+        rgb(184, 184, 151)
+        );
+
+    }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+  form li + li {
+    margin-top: 20px;
+    }
+  label {
+
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    }
+  
+input, textarea{
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #999;
+    border-radius: 8px;
+    }
+  
+input:focus,
+    textarea:focus {
+    border-color:2px solid #889671;
+    }
+  
+textarea {
+    height:200px;
+    }
+  
+.button {
+    margin: 8px;
+    padding: 15px;
+    color: #fff;
+    background-color: rgb(55, 95, 55);
+    }
+  
+/* Aquí termina Contactos----------------------------------------------------------------------------------------- */
+
+/* Aquí comienza Sobre Nosotros */
+.h1__nosotros{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    }
+
+.nosotros__main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    }
+.nosotros__texto{
+    padding: 20px;
+    background-color: #fff;
+    width: 50%;
+    margin: 20px;
+
+    }
+.nosotros__img{
+    width: 50%;
+    margin: 20px;  
+    }
+.nosotros__img img{
+    width: 100%;
+    object-fit: cover;
+    }
+@media screen and (max-width: 900px) {
+    .nosotros__main{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nosotros__img{
+        width: 100%;
+        margin: 20px;  
+    }
+    .nosotros__texto{
+        margin: 20px;
+        padding: 20px;
+        background-color: #fff;
+        width: 100%;
+    
+    }
+    }
+
+/* Aquí termina Sobre Nosotros----------------------------------------------------------------------------------------  */
+
+/* aquí comienza el footer */
+footer {
+    height: 50px;
+    width: 100%;
+    display:flex;  
+    justify-content: space-around;
+    align-content:center;
+    align-items: center;
+    position:fixed;
+    z-index: 100;  
+    top: 95vh;
+    background: linear-gradient(
+        rgb(214, 214, 175),
+        rgb(202, 164, 93),
+        rgb(202, 164, 93),
+        rgb(202, 164, 93),
+        rgb(202, 164, 93)
+        );
+
+    }
+footer p{
+    font-family: 'Roboto', sans-serif;
+    color:rgb(0, 0, 0);
+    font-size: 0.7rem;
+    margin: 0;
+    }
+
+
+

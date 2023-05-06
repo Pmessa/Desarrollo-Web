@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bruno+Ace+SC&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-image: url(../../img/img-index/DX3W7SWYKND43OY5GUJYOSAZQE.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+Header {
+  height: 125px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 80px 50px;
+  justify-content: center;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  flex-direction: column;
+  background: linear-gradient(163deg, rgb(255, 255, 234) 0%, rgb(218, 216, 197) 32%, rgb(223, 221, 203) 69%, rgb(222, 214, 187) 100%);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #dfd3b9;
+}
+Header .logo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  grid-column: 1/1000;
+}
+Header .logo img {
+  height: 80px;
+  margin: 10px;
+}
+Header nav {
+  grid-column: 1/20;
+  grid-row: 2/2;
+  justify-self: center;
+  width: 100%;
+}
+Header nav .container-fluid {
+  flex-direction: column;
+}
+Header nav .container-fluid a img {
+  height: 10 0px;
+  font-family: "Bruno Ace SC", cursive;
+}
+Header nav .container-fluid button {
+  margin-top: 10px;
+}
+Header nav .container-fluid .navbar-collapse ul li a {
+  color: #67726c;
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 1rem;
+}
+Header nav .container-fluid .navbar-collapse ul li a:hover {
+  color: rgba(128, 126, 126, 0.8078431373);
+  transition: 2s;
+}
+
+@media screen and (max-width: 991px) {
+  header {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+  }
+  .container-fluid {
+    flex-direction: row;
+  }
+  .nav-down {
+    margin-top: 17px;
+    color: #67726c;
+    font-size: 0.5rem;
+    border-radius: 10px;
+    width: 50vw;
+    background: linear-gradient(163deg, rgb(255, 255, 234) 0%, rgb(218, 216, 197) 32%, rgb(223, 221, 203) 69%, rgb(222, 214, 187) 100%);
+  }
+  .nav-down .nav-link {
+    color: #67726c;
+    font-size: 3rem;
+  }
+}
+.index__section__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 150px repeat(4, 1fr);
+  height: 100vh;
+  background-image: url(../img/img-index/DX3W7SWYKND43OY5GUJYOSAZQE.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.index__section__container .index__container {
+  display: grid;
+  grid-template-rows: 150px repeat(6, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-row: 1/7;
+  grid-column: 1/13;
+  justify-content: center;
+  align-items: center;
+}
+.index__section__container .index__container .index__section__img {
+  display: flex;
+  grid-column: 1/13;
+  grid-row: 1/8;
+  justify-content: center;
+  align-items: center;
+}
+.index__section__container .index__container .index__section__img img {
+  display: flex;
+  height: calc(100vh - 50px);
+  width: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 991px) {
+  .slogan {
+    display: none;
+  }
+}
+footer {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  background: linear-gradient(163deg, rgb(255, 255, 234) 0%, rgb(218, 216, 197) 32%, rgb(223, 221, 203) 69%, rgb(222, 214, 187) 100%);
+  border-top: 1px solid #dfd3b9;
+}
+footer .slogan {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 1rem;
+  color: #67726c;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 991px) {
+  footer .slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
