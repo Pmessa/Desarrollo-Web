@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bruno+Ace+SC&display=swap");
 * {
   padding: 0;
@@ -134,12 +135,12 @@ Header nav .container-fluid .navbar-collapse ul li a:hover {
   }
 }
 footer {
-  height: 60px;
+  height: 100px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-content: center;
   align-items: center;
   position: fixed;
@@ -229,5 +230,135 @@ section {
     grid-row: span 2;
   }
 }
+@media screen and (max-width: 992px) {
+  .footer__galeria {
+    position: relative;
+    height: 100px;
+  }
+}
+/* Aquí comienza la sección de asesorías */
+body {
+  background-color: RGB(233, 232, 212);
+}
+
+.titulo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.titulo .h1__asesorias {
+  display: flex;
+  position: relative;
+  color: #67726c;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  height: 70px;
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 1.5rem;
+}
+.titulo h2 {
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 1.25rem;
+  color: #67726c;
+  text-align: center;
+}
+.titulo h2 p {
+  text-align: center;
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 1rem;
+  color: #67726c;
+}
+
+.card__container {
+  display: flex;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.card__container .card {
+  margin: 10px;
+  background: linear-gradient(rgb(118, 114, 114), rgb(202, 164, 93));
+}
+.card__container .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card__container .card-body .card-title {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #efecbe;
+}
+.card__container .card-body .card-text {
+  color: #efecbe;
+}
+.card__container .card-body .btn {
+  color: white;
+  background: rgb(70, 74, 11);
+}
+.card__container .card-body .card-text {
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .titulo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .titulo .h1__asesorias {
+    display: none;
+  }
+  .titulo h2 {
+    top: 40px;
+    display: flex;
+    position: relative;
+    text-align: center;
+  }
+  .titulo p {
+    text-align: center;
+    position: relative;
+    top: 40px;
+  }
+  .footer__asesorias {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .titulo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .titulo .h1__asesorias {
+    display: flex;
+  }
+  .titulo h2 {
+    top: 40px;
+    display: none;
+    position: relative;
+    text-align: center;
+  }
+  .titulo p {
+    display: none;
+    text-align: center;
+    position: relative;
+    top: 40px;
+  }
+  .card__container {
+    margin-top: 0px;
+  }
+}
+/* Aquí termina la sección de asesorías */
 
 /*# sourceMappingURL=style.css.map */
