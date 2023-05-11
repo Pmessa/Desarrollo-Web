@@ -1,7 +1,7 @@
 body{
     background-color: RGB(233,232,212);
 }
-.titulo__asesorias{
+.titulo__capacitaciones{
     width: 100%;
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@ body{
     position: relative;
    
 
-    .h1__asesorias{
+    .h1__capacitaciones{
         display: none;
         position: relative;
         color: #67726c;
@@ -22,14 +22,14 @@ body{
         font-family: "Bruno Ace SC", cursive;
         font-size: 1.5rem;
         }
-        .h2__asesorias{
+        .h2__capacitaciones{
             font-family: "Bruno Ace SC", cursive;
             font-size: 1.25rem;
             color: #67726c;
             text-align: center;
             position: relative;
 
-            #p__asesorias{
+            #p__capacitaciones{
                 text-align: center;
                 font-family: "Bruno Ace SC", cursive;
                 font-size: 1rem;
@@ -85,44 +85,44 @@ body{
 
 @media  screen and (max-width:992px){
 
-    .titulo__asesorias{
+    .titulo__capacitaciones{
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
         position:relative;
         
-        .h1__asesorias{
+        .h1__capacitaciones{
             display: flex;
         }
-        .h2__asesorias{  
+        .h2__capacitaciones{  
             display:none;
             position: relative;
             text-align: center;
         }      
-        #p__asesorias{
+        #p__capacitaciones{
             display: none;
             text-align: center;
             position: relative;
                    }
     }
 
-    .footer__asesorias{
+    .footer__capacitaciones{
         display: none;
     }
 }
 @media  screen and (min-width:991px){
     
-    .titulo__asesorias{
+    .titulo__capacitaciones{
         top: 20px;
         align-items: center;
         flex-direction: column;
         justify-content: center;
         
-        .h1__asesorias{
+        .h1__capacitaciones{
             display: flex;
         }
-        .h2__asesorias{
+        .h2__capacitaciones{
             font-family: "Bruno Ace SC", cursive;
             font-size: 1.25rem;
             color: #67726c;
@@ -130,9 +130,11 @@ body{
             top: -25px;
             position: relative;
         }      
-        #p__asesorias{
+        #p__capacitaciones{
             top: -25px;
             display: flex;
+            font-family: "Bruno Ace SC", cursive;
+            color: #67726c;
             text-align: center;
             position: relative;
            
