@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bruno+Ace+SC&display=swap");
 * {
   padding: 0;
@@ -130,12 +129,12 @@ Header nav .container-fluid .navbar-collapse ul li a:hover {
   }
 }
 footer {
-  height: 100px;
+  height: 50px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-content: center;
   align-items: center;
   position: fixed;
@@ -154,6 +153,9 @@ footer .slogan {
   justify-content: center;
   align-items: center;
 }
+footer .slogan p {
+  margin-bottom: 0;
+}
 
 @media screen and (max-width: 991px) {
   footer .slogan {
@@ -161,6 +163,9 @@ footer .slogan {
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+  footer .slogan p {
+    margin-bottom: 0;
   }
 }
 .h1__container {
@@ -231,20 +236,20 @@ section {
     height: 100px;
   }
 }
-/* Aquí comienza la sección de asesorías */
 body {
   background-color: RGB(233, 232, 212);
 }
 
-.titulo {
+.titulo__asesorias {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
-.titulo .h1__asesorias {
-  display: flex;
+.titulo__asesorias .h1__asesorias {
+  display: none;
   position: relative;
   color: #67726c;
   align-content: center;
@@ -255,13 +260,14 @@ body {
   font-family: "Bruno Ace SC", cursive;
   font-size: 1.5rem;
 }
-.titulo h2 {
+.titulo__asesorias .h2__asesorias {
   font-family: "Bruno Ace SC", cursive;
   font-size: 1.25rem;
   color: #67726c;
   text-align: center;
+  position: relative;
 }
-.titulo h2 p {
+.titulo__asesorias .h2__asesorias #p__asesorias {
   text-align: center;
   font-family: "Bruno Ace SC", cursive;
   font-size: 1rem;
@@ -275,7 +281,6 @@ body {
   align-content: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-top: 50px;
 }
 .card__container .card {
   margin: 10px;
@@ -303,57 +308,185 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 992px) {
-  .titulo {
+@media screen and (max-width: 992px) {
+  .titulo__asesorias {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    position: relative;
   }
-  .titulo .h1__asesorias {
-    display: none;
-  }
-  .titulo h2 {
-    top: 40px;
+  .titulo__asesorias .h1__asesorias {
     display: flex;
+  }
+  .titulo__asesorias .h2__asesorias {
+    display: none;
     position: relative;
     text-align: center;
   }
-  .titulo p {
+  .titulo__asesorias #p__asesorias {
+    display: none;
     text-align: center;
     position: relative;
-    top: 40px;
   }
   .footer__asesorias {
     display: none;
   }
 }
-@media screen and (max-width: 991px) {
-  .titulo {
-    display: flex;
+@media screen and (min-width: 991px) {
+  .titulo__asesorias {
+    top: 20px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
   }
-  .titulo .h1__asesorias {
+  .titulo__asesorias .h1__asesorias {
     display: flex;
   }
-  .titulo h2 {
-    top: 40px;
-    display: none;
-    position: relative;
+  .titulo__asesorias .h2__asesorias {
+    font-family: "Bruno Ace SC", cursive;
+    font-size: 1.25rem;
+    color: #67726c;
     text-align: center;
+    top: -25px;
+    position: relative;
   }
-  .titulo p {
-    display: none;
+  .titulo__asesorias #p__asesorias {
+    top: -25px;
+    display: flex;
     text-align: center;
     position: relative;
-    top: 40px;
   }
   .card__container {
     margin-top: 0px;
   }
 }
-/* Aquí termina la sección de asesorías */
+body {
+  background-color: RGB(233, 232, 212);
+}
+
+.titulo__capacitaciones {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.titulo__capacitaciones .h1__capacitaciones {
+  display: none;
+  position: relative;
+  color: #67726c;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  height: 70px;
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 1.5rem;
+}
+.titulo__capacitaciones .h2__capacitaciones {
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 1.25rem;
+  color: #67726c;
+  text-align: center;
+  position: relative;
+}
+.titulo__capacitaciones .h2__capacitaciones #p__capacitaciones {
+  text-align: center;
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 1rem;
+  color: #67726c;
+}
+
+.card__container {
+  display: flex;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card__container .card {
+  margin: 10px;
+  background: linear-gradient(rgb(118, 114, 114), rgb(202, 164, 93));
+}
+.card__container .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card__container .card-body .card-title {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #efecbe;
+}
+.card__container .card-body .card-text {
+  color: #efecbe;
+}
+.card__container .card-body .btn {
+  color: white;
+  background: rgb(70, 74, 11);
+}
+.card__container .card-body .card-text {
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .titulo__capacitaciones {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .titulo__capacitaciones .h1__capacitaciones {
+    display: flex;
+  }
+  .titulo__capacitaciones .h2__capacitaciones {
+    display: none;
+    position: relative;
+    text-align: center;
+  }
+  .titulo__capacitaciones #p__capacitaciones {
+    display: none;
+    text-align: center;
+    position: relative;
+  }
+  .footer__capacitaciones {
+    display: none;
+  }
+}
+@media screen and (min-width: 991px) {
+  .titulo__capacitaciones {
+    top: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .titulo__capacitaciones .h1__capacitaciones {
+    display: flex;
+  }
+  .titulo__capacitaciones .h2__capacitaciones {
+    font-family: "Bruno Ace SC", cursive;
+    font-size: 1.25rem;
+    color: #67726c;
+    text-align: center;
+    top: -25px;
+    position: relative;
+  }
+  .titulo__capacitaciones #p__capacitaciones {
+    top: -25px;
+    display: flex;
+    font-family: "Bruno Ace SC", cursive;
+    color: #67726c;
+    text-align: center;
+    position: relative;
+  }
+  .card__container {
+    margin-top: 0px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
