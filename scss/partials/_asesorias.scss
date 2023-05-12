@@ -1,16 +1,17 @@
-body{
-    background-color: RGB(233,232,212);
+body {
+    background-color: RGB(233, 232, 212);
 }
-.titulo__asesorias{
+
+.titulo__asesorias {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: relative;
-   
 
-    .h1__asesorias{
+
+    .h1__asesorias {
         display: none;
         position: relative;
         color: #67726c;
@@ -18,31 +19,32 @@ body{
         justify-content: center;
         text-align: center;
         flex-wrap: wrap;
-        height: 70px;  
+        height: 70px;
         font-family: "Bruno Ace SC", cursive;
         font-size: 1.5rem;
-        }
-        .h2__asesorias{
-            font-family: "Bruno Ace SC", cursive;
-            font-size: 1.25rem;
-            color: #67726c;
-            text-align: center;
-            position: relative;
-
-            #p__asesorias{
-                text-align: center;
-                font-family: "Bruno Ace SC", cursive;
-                font-size: 1rem;
-                color: #67726c;
-                
-                
-            }
-        }
     }
 
+    .h2__asesorias {
+        font-family: "Bruno Ace SC", cursive;
+        font-size: 1.25rem;
+        color: #67726c;
+        text-align: center;
+        position: relative;
+
+        #p__asesorias {
+            text-align: center;
+            font-family: "Bruno Ace SC", cursive;
+            font-size: 1rem;
+            color: #67726c;
 
 
-.card__container-asesorias{
+        }
+    }
+}
+
+
+
+.card__container-asesorias {
 
     display: flex;
     width: 100%;
@@ -52,99 +54,120 @@ body{
     justify-content: space-evenly;
     flex-wrap: wrap;
 
-   
-        .card{
-        margin: 0;
+
+
+
+    .card-asesorias {
+
         background: linear-gradient(rgb(118, 114, 114),
-        rgb(202, 164, 93));
+                rgb(202, 164, 93));
+        margin: 10px;
+        border-radius: 10px;
+
+        .card-img-top {
+            border-radius: 10px;
         }
-        .card-body{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            .card-title{
-                font-family: 'Roboto', sans-serif;
-                text-align: center;
-                color: #efecbe;
-                font-size: 1.2rem;
-                }
-                .card-text{
-                    color: #efecbe;
-                }
-            .btn {
-                color: white;
-                background: rgb(70, 74, 11);
-                margin: 0;
-                padding: 5, 10px;
-                            }
-            .card-text{
-                margin: 0;
-                padding-bottom: 5px;
-                font-size: 0.8rem;
-                text-align: center;
-            }
-        }
- 
+
     }
 
 
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
 
-@media  screen and (max-width:992px){
+        .card-title {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: #efecbe;
+            font-size: 1.2rem;
+        }
 
-    .titulo__asesorias{
+        .card-text {
+            color: #efecbe;
+        }
+
+        .btn {
+            color: white;
+            background: rgb(70, 74, 11);
+            margin: 10px;
+            padding: 5, 10px;
+        }
+
+        .card-text {
+            margin: 0;
+            padding-bottom: 5px;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+        .card-text {
+            text-align: center;
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width:992px) {
+
+    .titulo__asesorias {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        position:relative;
-        
-        .h1__asesorias{
+        position: relative;
+
+        .h1__asesorias {
             display: flex;
         }
-        .h2__asesorias{  
-            display:none;
+
+        .h2__asesorias {
+            display: none;
             position: relative;
             text-align: center;
-        }      
-        #p__asesorias{
+        }
+
+        #p__asesorias {
             display: none;
             text-align: center;
             position: relative;
-                   }
+        }
     }
 
-    .footer__asesorias{
+    .footer__asesorias {
         display: none;
     }
 }
-@media  screen and (min-width:991px){
-    
-    .titulo__asesorias{
+
+@media screen and (min-width:991px) {
+
+    .titulo__asesorias {
         top: 20px;
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        
-        .h1__asesorias{
+
+        .h1__asesorias {
             display: flex;
         }
-        .h2__asesorias{
+
+        .h2__asesorias {
             font-family: "Bruno Ace SC", cursive;
             font-size: 1.25rem;
             color: #67726c;
             text-align: center;
             top: -25px;
             position: relative;
-        }      
-        #p__asesorias{
+        }
+
+        #p__asesorias {
             top: -25px;
             display: flex;
             text-align: center;
             position: relative;
         }
     }
-    .card__container{
-        margin-top: 0px;
-    }  
+
 }

@@ -1,16 +1,17 @@
-body{
-    background-color: RGB(233,232,212);
+body {
+    background-color: RGB(233, 232, 212);
 }
-.titulo__capacitaciones{
+
+.titulo__capacitaciones {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: relative;
-   
 
-    .h1__capacitaciones{
+
+    .h1__capacitaciones {
         display: none;
         position: relative;
         color: #67726c;
@@ -18,129 +19,149 @@ body{
         justify-content: center;
         text-align: center;
         flex-wrap: wrap;
-        height: 70px;  
+        height: 70px;
         font-family: "Bruno Ace SC", cursive;
         font-size: 1.5rem;
-        }
-        .h2__capacitaciones{
-            font-family: "Bruno Ace SC", cursive;
-            font-size: 1.25rem;
-            color: #67726c;
-            text-align: center;
-            position: relative;
-
-            #p__capacitaciones{
-                text-align: center;
-                font-family: "Bruno Ace SC", cursive;
-                font-size: 1rem;
-                color: #67726c;
-                
-                
-            }
-        }
     }
 
+    .h2__capacitaciones {
+        font-family: "Bruno Ace SC", cursive;
+        font-size: 1.25rem;
+        color: #67726c;
+        text-align: center;
+        position: relative;
+
+        #p__capacitaciones {
+            text-align: center;
+            font-family: "Bruno Ace SC", cursive;
+            font-size: 1rem;
+            color: #67726c;
 
 
-.card__container{
+        }
+    }
+}
+
+
+
+.card__container-capacitaciones {
 
     display: flex;
     width: 100%;
+    height: 50%;
     display: flex;
     align-content: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
 
-   
-        .card{
+
+    .card-capacitaciones {
         margin: 10px;
         background: linear-gradient(rgb(118, 114, 114),
-        rgb(202, 164, 93));
+                rgb(202, 164, 93));
+        margin: 10px;
+        border-radius: 10px;
+
+        .card-img-top {
+            border-radius: 10px;
         }
-        .card-body{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            .card-title{
-                font-family: 'Roboto', sans-serif;
-                text-align: center;
-                color: #efecbe;
-                }
-                .card-text{
-                    color: #efecbe;
-                }
-            .btn {
-                color: white;
-                background: rgb(70, 74, 11);
-                            }
-            .card-text{
-                text-align: center;
-            }
-        }
- 
     }
 
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .card-title {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: #efecbe;
+            font-size: 1.2rem;
+        }
+
+        .card-text {
+            margin: 0;
+            padding-bottom: 5px;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        .btn {
+            color: white;
+            background: rgb(70, 74, 11);
+            margin: 10px;
+            padding: 5, 10px;
+        }
+
+        .card-text {
+            text-align: center;
+        }
+    }
+
+}
 
 
-@media  screen and (max-width:992px){
 
-    .titulo__capacitaciones{
+@media screen and (max-width:992px) {
+
+    .titulo__capacitaciones {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        position:relative;
-        
-        .h1__capacitaciones{
+        position: relative;
+
+        .h1__capacitaciones {
             display: flex;
         }
-        .h2__capacitaciones{  
-            display:none;
+
+        .h2__capacitaciones {
+            display: none;
             position: relative;
             text-align: center;
-        }      
-        #p__capacitaciones{
+        }
+
+        #p__capacitaciones {
             display: none;
             text-align: center;
             position: relative;
-                   }
+        }
     }
 
-    .footer__capacitaciones{
+    .footer__capacitaciones {
         display: none;
     }
 }
-@media  screen and (min-width:991px){
-    
-    .titulo__capacitaciones{
+
+@media screen and (min-width:991px) {
+
+    .titulo__capacitaciones {
         top: 20px;
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        
-        .h1__capacitaciones{
+
+        .h1__capacitaciones {
             display: flex;
         }
-        .h2__capacitaciones{
+
+        .h2__capacitaciones {
             font-family: "Bruno Ace SC", cursive;
             font-size: 1.25rem;
             color: #67726c;
             text-align: center;
             top: -25px;
             position: relative;
-        }      
-        #p__capacitaciones{
+        }
+
+        #p__capacitaciones {
             top: -25px;
             display: flex;
-            font-family: "Bruno Ace SC", cursive;
-            color: #67726c;
             text-align: center;
             position: relative;
-           
+
         }
     }
-    .card__container{
-        margin-top: 0px;
-    }  
+
 }
