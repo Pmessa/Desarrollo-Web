@@ -1,3 +1,14 @@
+@keyframes planta{
+    0%{ transform: translate(-10px);}
+    12%{ transform: translate(-30px);} 
+    25%{transform: translate(-55px);}
+    50%{transform: translate(-75px);}
+    60%{ transform: translate(-55px);}
+    75%{transform: translate(-30px);}
+    100%{transform: translate(-10px);}
+
+}
+
 .index__section__container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -10,9 +21,9 @@
     background-position:center;
     
 
-    .index__container{
+    .index-img__container{
         display: grid;
-        grid-template-rows:150px repeat(6, 1fr);
+        grid-template-rows:150px repeat(5, 1fr);
         grid-template-columns: repeat(12, 1fr);
         grid-row: 1 / 7;
         grid-column: 1 / 13;
@@ -20,29 +31,25 @@
         align-items: center;
 
 
-        .index__section__img{
+        .img-index{
             display: flex;
             grid-column: 1 / 13;
             grid-row: 1 / 8;
             justify-content: center;
-            align-items: center;
-            
-            
-            
-            img{
-                display: flex;
-                height: calc(100vh - 50px);
-                width: 100%;
-                object-fit: contain;
-                
+            align-items: center; 
+            width: 300px;    
+            transition:transform 5s; 
+            animation-name: planta;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
 
             }
-        }
-    }
-}
-@media screen and (max-width: 991px){
-    .slogan{
-        display: none;
-    }
+
+
+            // .img-index:hover{
+            //     transform: rotate(15deg);
+
     
+            // }
+    }    
 }
