@@ -1,0 +1,129 @@
+body {
+    background-color: rgb(233, 232, 212);
+}
+
+.titulo__nosotros {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+
+    .h1__nosotros {
+        display: none;
+        position: relative;
+        color: #67726c;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        height: 70px;
+        font-family: "Bruno Ace SC", cursive;
+        font-size: 1.5rem;
+    }
+
+    .h2__nosotros {
+        font-family: "Bruno Ace SC", cursive;
+        font-size: 1.25rem;
+        color: #67726c;
+        text-align: center;
+        position: relative;
+        width: 75vw;
+
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .titulo__nosotros {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+
+        .h1__nosotros {
+            display: flex;
+        }
+
+        .h2__nosotros {
+            display: none;
+            position: relative;
+            text-align: center;
+        }
+    }
+
+    .footer__nosotros {
+        display: flex;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width:991px) {
+
+    .titulo__nosotros {
+        top: 20px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .h1__nosotros {
+            display: flex;
+        }
+
+        .h2__nosotros {
+            font-family: "Bruno Ace SC", cursive;
+            font-size: 1.25rem;
+            color: #67726c;
+            text-align: center;
+            top: -25px;
+            position: relative;
+        }
+    }
+
+}
+.nosotros__img{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+    img{
+        width:700px;
+    }
+}
+.nosotros__texto{
+    display: flex;
+    text-align:center;
+    align-items: center;
+    flex-direction:column;
+    margin-bottom:200px;
+    h3{
+        margin: 5px;
+        font-family: "Bruno Ace SC", cursive;
+        font-size: 1.25rem;
+        color: #67726c;
+        text-align: center;
+       
+    }
+    p{
+        font-size: 0.9rem;
+        color: #67726c;
+        text-align: center;
+        width: 75vw;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .nosotros__img{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 100vw;
+        img{
+            width:100vw;
+        }
+    }
+    
+}

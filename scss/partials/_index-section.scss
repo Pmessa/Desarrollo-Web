@@ -1,19 +1,19 @@
 @keyframes planta{
-    0%{ transform: translate(-10px);}
-    12%{ transform: translate(-30px);} 
-    25%{transform: translate(-55px);}
-    50%{transform: translate(-75px);}
-    60%{ transform: translate(-55px);}
-    75%{transform: translate(-30px);}
-    100%{transform: translate(-10px);}
+    0%{ transform: translate(0px);}
+    12%{ transform: translate(20vw);} 
+    25%{transform: translate(50vw);}
+    50%{transform: translate(60vw);}
+    60%{ transform: translate(50vw);}
+    75%{transform: translate(20vw);}
+    100%{transform: translate(10vw);}
 
 }
 
 .index__section__container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 150px repeat(4, 1fr);
-    height: 100vh;
+    grid-template-rows: 150px repeat(3, 1fr);
+    height: 85vh;
     background-image:url(../img/img-index/DX3W7SWYKND43OY5GUJYOSAZQE.avif);
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,6 +29,9 @@
         grid-column: 1 / 13;
         justify-content: center;
         align-items: center;
+        display: flex;
+        position: absolute;
+        top: 300px;
 
 
         .img-index{
@@ -41,7 +44,7 @@
             transition:transform 5s; 
             animation-name: planta;
             animation-iteration-count: infinite;
-            animation-duration: 10s;
+            animation-duration: 100s;
 
             }
 

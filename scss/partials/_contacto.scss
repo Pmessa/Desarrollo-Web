@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(233, 232, 212);
+}
+
+.titulo__contacto {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+
+    .h1__contacto {
+        display: none;
+        position: relative;
+        color: #67726c;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        height: 70px;
+        font-family: "Bruno Ace SC", cursive;
+        font-size: 1.5rem;
+    }
+
+    .h2__contacto {
+        font-family: "Bruno Ace SC", cursive;
+        font-size: 1.25rem;
+        color: #67726c;
+        text-align: center;
+        position: relative;
+
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .titulo__contacto {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+
+        .h1__contacto {
+            display: flex;
+        }
+
+        .h2__contacto {
+            display: none;
+            position: relative;
+            text-align: center;
+        }
+    }
+
+    .footer__contacto {
+        display: none;
+    }
+}
+
+@media screen and (min-width:991px) {
+
+    .titulo__contacto {
+        top: 20px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .h1__contacto {
+            display: flex;
+        }
+
+        .h2__contacto {
+            font-family: "Bruno Ace SC", cursive;
+            font-size: 1.25rem;
+            color: #67726c;
+            text-align: center;
+            top: -25px;
+            position: relative;
+        }
+    }
+
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+
+    ul {
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            width: 80vw;
+
+            textarea {
+                height: 200px;
+                color: #a0a0a0;
+            }
+
+
+        }
+    }
+
+    .button {
+        color: white;
+        font-size: 1.5rem;
+        background: rgb(70, 74, 11);
+        margin: 10px;
+        padding: 10px;
+        border-radius:15px;
+    }
+}

@@ -91,32 +91,32 @@ Header nav .container-fluid .navbar-collapse ul li a:hover {
 }
 @keyframes planta {
   0% {
-    transform: translate(-10px);
+    transform: translate(0px);
   }
   12% {
-    transform: translate(-30px);
+    transform: translate(20vw);
   }
   25% {
-    transform: translate(-55px);
+    transform: translate(50vw);
   }
   50% {
-    transform: translate(-75px);
+    transform: translate(60vw);
   }
   60% {
-    transform: translate(-55px);
+    transform: translate(50vw);
   }
   75% {
-    transform: translate(-30px);
+    transform: translate(20vw);
   }
   100% {
-    transform: translate(-10px);
+    transform: translate(10vw);
   }
 }
 .index__section__container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 150px repeat(4, 1fr);
-  height: 100vh;
+  grid-template-rows: 150px repeat(3, 1fr);
+  height: 85vh;
   background-image: url(../img/img-index/DX3W7SWYKND43OY5GUJYOSAZQE.avif);
   background-size: cover;
   background-repeat: no-repeat;
@@ -131,6 +131,9 @@ Header nav .container-fluid .navbar-collapse ul li a:hover {
   grid-column: 1/13;
   justify-content: center;
   align-items: center;
+  display: flex;
+  position: absolute;
+  top: 300px;
 }
 .index__section__container .index-img__container .img-index {
   display: flex;
@@ -142,7 +145,7 @@ Header nav .container-fluid .navbar-collapse ul li a:hover {
   transition: transform 5s;
   animation-name: planta;
   animation-iteration-count: infinite;
-  animation-duration: 10s;
+  animation-duration: 100s;
 }
 
 footer {
@@ -390,7 +393,7 @@ body {
   }
 }
 body {
-  background-color: RGB(233, 232, 212);
+  background-color: rgb(233, 232, 212);
 }
 
 .titulo__capacitaciones {
@@ -655,6 +658,227 @@ body {
     display: flex;
     text-align: center;
     position: relative;
+  }
+}
+body {
+  background-color: rgb(233, 232, 212);
+}
+
+.titulo__contacto {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.titulo__contacto .h1__contacto {
+  display: none;
+  position: relative;
+  color: #67726c;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  height: 70px;
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 1.5rem;
+}
+.titulo__contacto .h2__contacto {
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 1.25rem;
+  color: #67726c;
+  text-align: center;
+  position: relative;
+}
+
+@media screen and (max-width: 992px) {
+  .titulo__contacto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .titulo__contacto .h1__contacto {
+    display: flex;
+  }
+  .titulo__contacto .h2__contacto {
+    display: none;
+    position: relative;
+    text-align: center;
+  }
+  .footer__contacto {
+    display: none;
+  }
+}
+@media screen and (min-width: 991px) {
+  .titulo__contacto {
+    top: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .titulo__contacto .h1__contacto {
+    display: flex;
+  }
+  .titulo__contacto .h2__contacto {
+    font-family: "Bruno Ace SC", cursive;
+    font-size: 1.25rem;
+    color: #67726c;
+    text-align: center;
+    top: -25px;
+    position: relative;
+  }
+}
+form {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+form ul {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+form ul li {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 80vw;
+}
+form ul li textarea {
+  height: 200px;
+  color: #a0a0a0;
+}
+form .button {
+  color: white;
+  font-size: 1.5rem;
+  background: rgb(70, 74, 11);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+body {
+  background-color: rgb(233, 232, 212);
+}
+
+.titulo__nosotros {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.titulo__nosotros .h1__nosotros {
+  display: none;
+  position: relative;
+  color: #67726c;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  height: 70px;
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 1.5rem;
+}
+.titulo__nosotros .h2__nosotros {
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 1.25rem;
+  color: #67726c;
+  text-align: center;
+  position: relative;
+  width: 75vw;
+}
+
+@media screen and (max-width: 992px) {
+  .titulo__nosotros {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .titulo__nosotros .h1__nosotros {
+    display: flex;
+  }
+  .titulo__nosotros .h2__nosotros {
+    display: none;
+    position: relative;
+    text-align: center;
+  }
+  .footer__nosotros {
+    display: flex;
+    height: 100px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .titulo__nosotros {
+    top: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .titulo__nosotros .h1__nosotros {
+    display: flex;
+  }
+  .titulo__nosotros .h2__nosotros {
+    font-family: "Bruno Ace SC", cursive;
+    font-size: 1.25rem;
+    color: #67726c;
+    text-align: center;
+    top: -25px;
+    position: relative;
+  }
+}
+.nosotros__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.nosotros__img img {
+  width: 700px;
+}
+
+.nosotros__texto {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 200px;
+}
+.nosotros__texto h3 {
+  margin: 5px;
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 1.25rem;
+  color: #67726c;
+  text-align: center;
+}
+.nosotros__texto p {
+  font-size: 0.9rem;
+  color: #67726c;
+  text-align: center;
+  width: 75vw;
+}
+
+@media screen and (max-width: 600px) {
+  .nosotros__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .nosotros__img img {
+    width: 100vw;
   }
 }
 
