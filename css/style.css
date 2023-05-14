@@ -91,10 +91,10 @@ Header nav .container-fluid .navbar-collapse ul li a:hover {
 }
 @keyframes logo {
   0% {
-    transform: translate(0vw);
+    transform: translate(25px);
   }
   100% {
-    transform: translate(100vw);
+    transform: translate(200px);
   }
 }
 .index__section__container {
@@ -110,6 +110,7 @@ Header nav .container-fluid .navbar-collapse ul li a:hover {
 }
 .index__section__container .index-img__container {
   display: grid;
+  position: relative;
   grid-template-rows: 150px repeat(5, 1fr);
   grid-template-columns: repeat(12, 1fr);
   grid-row: 1/7;
@@ -125,12 +126,18 @@ Header nav .container-fluid .navbar-collapse ul li a:hover {
   position: relative;
   bottom: -50px;
   width: 150px;
-  transition: transform 20s;
+  transition: transform 5s;
   animation-name: logo;
   animation-iteration-count: infinite;
   animation-duration: 30s;
 }
 
+@media screen and (max-width: 991px) {
+  .index__section__container .index-img__container .img-index {
+    width: 500px;
+    display: none;
+  }
+}
 footer {
   height: 50px;
   width: 100%;
