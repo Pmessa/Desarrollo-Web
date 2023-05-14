@@ -89,27 +89,12 @@ Header nav .container-fluid .navbar-collapse ul li a:hover {
     font-size: 3rem;
   }
 }
-@keyframes planta {
+@keyframes logo {
   0% {
-    transform: translate(0px);
-  }
-  12% {
-    transform: translate(20vw);
-  }
-  25% {
-    transform: translate(50vw);
-  }
-  50% {
-    transform: translate(60vw);
-  }
-  60% {
-    transform: translate(50vw);
-  }
-  75% {
-    transform: translate(20vw);
+    transform: translate(0vw);
   }
   100% {
-    transform: translate(10vw);
+    transform: translate(100vw);
   }
 }
 .index__section__container {
@@ -137,15 +122,13 @@ Header nav .container-fluid .navbar-collapse ul li a:hover {
 }
 .index__section__container .index-img__container .img-index {
   display: flex;
-  grid-column: 1/13;
-  grid-row: 1/8;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  transition: transform 5s;
-  animation-name: planta;
+  position: relative;
+  bottom: -50px;
+  width: 150px;
+  transition: transform 20s;
+  animation-name: logo;
   animation-iteration-count: infinite;
-  animation-duration: 100s;
+  animation-duration: 30s;
 }
 
 footer {
