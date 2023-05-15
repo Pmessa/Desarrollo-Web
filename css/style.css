@@ -49,6 +49,7 @@ Header nav {
 }
 Header nav .container-fluid {
   flex-direction: column;
+  --bs-gutter-x: 0rem;
 }
 Header nav .container-fluid a img {
   height: 10 0px;
@@ -132,8 +133,8 @@ Header nav .container-fluid .navbar-collapse ul li a:hover {
   animation-duration: 30s;
 }
 
-@media screen and (max-width: 991px) {
-  .index__section__container .index-img__container .img-index {
+@media screen and (min-width: 500px) {
+  .img-index {
     width: 500px;
     display: none;
   }
@@ -247,28 +248,28 @@ section {
   }
 }
 body {
-  background-color: RGB(233, 232, 212);
+  background-color: rgb(233, 232, 212);
 }
 
 .titulo__asesorias {
-  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   position: relative;
+  width: 100%;
 }
 .titulo__asesorias .h1__asesorias {
   display: none;
-  position: relative;
-  color: #67726c;
-  align-content: center;
   justify-content: center;
+  align-content: center;
   text-align: center;
   flex-wrap: wrap;
+  position: relative;
   height: 70px;
   font-family: "Bruno Ace SC", cursive;
   font-size: 1.5rem;
+  color: #67726c;
 }
 .titulo__asesorias .h2__asesorias {
   font-family: "Bruno Ace SC", cursive;
@@ -316,7 +317,7 @@ body {
 .card__container-asesorias .card-body .card-text {
   color: #efecbe;
 }
-.card__container-asesorias .card-body .btn {
+.card__container-asesorias .card-body .btn, .card__container-asesorias .card__container-ebooks .card-body .btn-bases-nutricion, .card__container-ebooks .card__container-asesorias .card-body .btn-bases-nutricion {
   color: white;
   background: rgb(70, 74, 11);
   margin: 10px;
@@ -335,9 +336,9 @@ body {
 @media screen and (max-width: 992px) {
   .titulo__asesorias {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
     position: relative;
   }
   .titulo__asesorias .h1__asesorias {
@@ -456,7 +457,7 @@ body {
   font-size: 0.8rem;
   text-align: center;
 }
-.card__container-capacitaciones .card-body .btn {
+.card__container-capacitaciones .card-body .btn, .card__container-capacitaciones .card__container-ebooks .card-body .btn-bases-nutricion, .card__container-ebooks .card__container-capacitaciones .card-body .btn-bases-nutricion {
   color: white;
   background: rgb(70, 74, 11);
   margin: 10px;
@@ -547,7 +548,7 @@ body {
   text-align: center;
   position: relative;
 }
-.titulo__ebooks .h2__ebooks #p__ebooks {
+.titulo__ebooks #p__ebooks {
   text-align: center;
   font-family: "Bruno Ace SC", cursive;
   font-size: 1rem;
@@ -585,16 +586,21 @@ body {
   font-size: 1.2rem;
 }
 .card__container-ebooks .card-body .card-text {
-  margin: 0;
+  margin: 10px;
   padding-bottom: 5px;
   font-size: 0.8rem;
   text-align: center;
 }
-.card__container-ebooks .card-body .btn {
+.card__container-ebooks .card-body .btn, .card__container-ebooks .card-body .btn-bases-nutricion {
   color: white;
   background: rgb(70, 74, 11);
   margin: 10px;
-  padding: 5, 10px;
+}
+.card__container-ebooks .card-body .btn-bases-nutricion {
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 0.8;
 }
 .card__container-ebooks .card-body .card-text {
   text-align: center;
@@ -655,10 +661,10 @@ body {
 }
 
 .titulo__contacto {
-  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  width: 100%;
+  align-items: center;
   flex-direction: column;
   position: relative;
 }
@@ -704,6 +710,7 @@ body {
 }
 @media screen and (min-width: 991px) {
   .titulo__contacto {
+    display: flex;
     top: 20px;
     align-items: center;
     flex-direction: column;
@@ -744,15 +751,14 @@ form ul li {
   width: 80vw;
 }
 form ul li textarea {
-  height: 200px;
+  height: 170px;
   color: #a0a0a0;
 }
 form .button {
   color: white;
   font-size: 1.5rem;
   background: rgb(70, 74, 11);
-  margin: 10px;
-  padding: 10px;
+  padding: 2px 120px;
   border-radius: 15px;
 }
 
@@ -829,45 +835,43 @@ body {
     position: relative;
   }
 }
-.nosotros__img {
+.nosotros__main .nosotros__img {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
 }
-.nosotros__img img {
+.nosotros__main .nosotros__img img {
   width: 700px;
 }
-
-.nosotros__texto {
+.nosotros__main .nosotros__texto {
   display: flex;
   text-align: center;
   align-items: center;
   flex-direction: column;
   margin-bottom: 200px;
 }
-.nosotros__texto h3 {
+.nosotros__main .nosotros__texto .h3__nosotros {
   margin: 5px;
   font-family: "Bruno Ace SC", cursive;
   font-size: 1.25rem;
   color: #67726c;
   text-align: center;
 }
-.nosotros__texto p {
+.nosotros__main .nosotros__texto p {
   font-size: 0.9rem;
-  color: #67726c;
+  color: rgb(91, 91, 91);
   text-align: center;
   width: 75vw;
 }
-
 @media screen and (max-width: 600px) {
-  .nosotros__img {
+  .nosotros__main .nosotros__img {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
   }
-  .nosotros__img img {
+  .nosotros__main .nosotros__img img {
     width: 100vw;
   }
 }

@@ -30,15 +30,14 @@ body {
         color: #67726c;
         text-align: center;
         position: relative;
+    }
+    #p__ebooks {
+        text-align: center;
+        font-family: "Bruno Ace SC", cursive;
+        font-size: 1rem;
+        color: #67726c;
 
-        #p__ebooks {
-            text-align: center;
-            font-family: "Bruno Ace SC", cursive;
-            font-size: 1rem;
-            color: #67726c;
 
-
-        }
     }
 }
 
@@ -81,7 +80,7 @@ body {
         }
 
         .card-text {
-            margin: 0;
+            margin: 10px;
             padding-bottom: 5px;
             font-size: 0.8rem;
             text-align: center;
@@ -91,7 +90,14 @@ body {
             color: white;
             background: rgb(70, 74, 11);
             margin: 10px;
-            padding: 5, 10px;
+        }
+        .btn-bases-nutricion{
+            @extend .btn;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 5px 10px;
+            font-size: .8;
+
         }
 
         .card-text {

@@ -84,46 +84,56 @@ body {
     }
 
 }
-.nosotros__img{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    width: 100vw;
-    img{
-        width:700px;
-    }
-}
-.nosotros__texto{
-    display: flex;
-    text-align:center;
-    align-items: center;
-    flex-direction:column;
-    margin-bottom:200px;
-    h3{
-        margin: 5px;
-        font-family: "Bruno Ace SC", cursive;
-        font-size: 1.25rem;
-        color: #67726c;
-        text-align: center;
-       
-    }
-    p{
-        font-size: 0.9rem;
-        color: #67726c;
-        text-align: center;
-        width: 75vw;
-    }
 
-}
-@media screen and (max-width:600px) {
-    .nosotros__img{
+.nosotros__main {
+
+
+    .nosotros__img {
         display: flex;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         width: 100vw;
-        img{
-            width:100vw;
+
+        img {
+            width: 700px;
         }
     }
-    
+
+    .nosotros__texto {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 200px;
+
+        .h3__nosotros {
+            margin: 5px;
+            font-family: "Bruno Ace SC", cursive;
+            font-size: 1.25rem;
+            color: #67726c;
+            text-align: center;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: rgb(91, 91, 91);
+            text-align: center;
+            width: 75vw;
+        }
+
+    }
+
+    @media screen and (max-width:600px) {
+        .nosotros__img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+
+            img {
+                width: 100vw;
+            }
+        }
+
+    }
 }

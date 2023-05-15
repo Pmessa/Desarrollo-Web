@@ -1,27 +1,27 @@
 body {
-    background-color: RGB(233, 232, 212);
+    background-color: rgb(233, 232, 212);
 }
 
 .titulo__asesorias {
-    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     position: relative;
+    width: 100%;
 
 
     .h1__asesorias {
         display: none;
-        position: relative;
-        color: #67726c;
-        align-content: center;
         justify-content: center;
+        align-content: center;
         text-align: center;
         flex-wrap: wrap;
+        position: relative;
         height: 70px;
         font-family: "Bruno Ace SC", cursive;
         font-size: 1.5rem;
+        color: #67726c;
     }
 
     .h2__asesorias {
@@ -114,9 +114,9 @@ body {
 
     .titulo__asesorias {
         display: flex;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
-        justify-content: center;
         position: relative;
 
         .h1__asesorias {
