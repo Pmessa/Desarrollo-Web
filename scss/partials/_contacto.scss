@@ -1,10 +1,12 @@
 body {
     background-color: rgb(233, 232, 212);
 }
-@mixin justify($justify){
-    display:flex;
+
+@mixin justify($justify) {
+    display: flex;
     justify-content: $justify;
 }
+
 .titulo__contacto {
     display: flex;
     justify-content: center;
@@ -121,7 +123,7 @@ form {
         color: white;
         font-size: 1.5rem;
         background: rgb(70, 74, 11);
-        padding:2px 120px;
-        border-radius:15px;
+        padding: 2px 120px;
+        border-radius: 15px;
     }
 }
