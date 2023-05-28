@@ -14,8 +14,8 @@
     <header>
       <div class="logo">
         <img src="../img/logo/logo-tr.png" alt="icono-hoja">
-      </div>
-      <nav class="navbar navbar-expand-lg navbar">
+      </div> 
+      <nav class="navbar navbar-expand-lg navbar ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,11 +24,22 @@
           <div class="collapse navbar-collapse nav-down   justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav text-center">
               <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
+                <a class="nav-link active" href="../index.html">Inicio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="galeria.html">Galería</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Galería
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../pages/galeria/dulce.html">Dulce</a></li>
+                  <li><a class="dropdown-item" href="../pages/galeria/salada.html">Salada</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Staff</a></li>
+                </ul>
               </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="pages/galeria.html">Galería</a>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="asesorias.html">Asesorías</a>
               </li>
@@ -39,7 +50,7 @@
                 <a class="nav-link" href="contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
             </ul>
           </div>
